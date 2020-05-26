@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Ghost click",
+  "version": "0.1.1",
+  "description": "make unexpected element catch the click",
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+        "matches": ["https://example.com/*"],
+        "js": ["contentscript.js"]
+    }
+  ]
+}

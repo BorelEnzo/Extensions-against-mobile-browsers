@@ -1,0 +1,13 @@
+{
+    "name": "Long URLs abuse",
+    "version": "0.1",
+    "description": "Force to sign-in/up with another app",
+    "manifest_version": 2,
+    "permissions": [],
+    "content_scripts": [
+      {
+          "matches": ["https://github.com/login*"],
+          "js": ["content.js"]
+      }
+    ]
+}

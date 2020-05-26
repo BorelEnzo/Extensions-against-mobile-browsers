@@ -1,0 +1,5 @@
+## Clipboard read/write
+
+System clipboard access is a well-known issue, as it may raise some security issue if some sensitive content is put there. On Android, it is even possible to register listeners for clipboard change, even if it occurs outside of the application. A web API exists to interact with the system clipboard, but can run only under certain restrictions, such as a secure context (HTTPS or localhost), and some specific flags must be set to gain a full access in Firefox ( and still doesn't provide a full support). In Chrome, an on-the-fly request is made whenever a webpage wants to access the clipboard, so as to prevent arbitrary read or write operations.
+
+However, extensions in Fennec are quite free to access the clipboard, as long as they ask for the permissions `clipboardRead` and `clipboardWrite` in the manifest. No further permission is then asked like is Chrome-like browsers. This is then a great power given to the extension as it can read content written by password managers, or abuse the "Paste and Go" feature.

@@ -1,0 +1,17 @@
+{
+
+  "manifest_version": 2,
+  "name": "Don't remove me",
+  "version": "0.0.1",
+  "description": "Prevents extension from being uninstalled",
+  "background": {
+      "scripts": ["background.js"]
+  },
+  "permissions": ["tabs"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "test@example.com",
+      "strict_min_version": "57.0"
+      }
+    }
+}

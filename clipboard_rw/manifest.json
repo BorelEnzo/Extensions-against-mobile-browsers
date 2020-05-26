@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Clipboard RW",
+  "version": "0.1.1",
+  "description": "Arbitrary read or write operations in clipboard",
+  "permissions": ["clipboardRead", "clipboardWrite"],
+  "content_scripts": [
+    {
+        "matches": ["https://example.com/*"],
+        "js": ["contentscript.js"]
+    }
+  ]
+}
